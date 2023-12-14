@@ -1,0 +1,48 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Report Designer Form View -->
+        <record id="view_report_designer_form" model="ir.ui.view">
+            <field name="name">report.designer.form</field>
+            <field name="model">report.designer</field>
+            <field name="arch" type="xml">
+                <form string="Report Designer">
+                    <!-- Add your fields here -->
+                </form>
+            </field>
+        </record>
+
+        <!-- Report Designer Tree View -->
+        <record id="view_report_designer_tree" model="ir.ui.view">
+            <field name="name">report.designer.tree</field>
+            <field name="model">report.designer</field>
+            <field name="arch" type="xml">
+                <tree string="Report Designer">
+                    <!-- Add your fields here -->
+                </tree>
+            </field>
+        </record>
+
+        <!-- Report Designer Action -->
+        <record id="action_report_designer" model="ir.actions.act_window">
+            <field name="name">Report Designer</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">report.designer</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_report_designer_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first report design
+                </p>
+                <p>
+                    Here, you can create and customize your report designs.
+                </p>
+            </field>
+        </record>
+
+        <!-- Report Designer Menu -->
+        <menuitem id="menu_report_designer" name="Report Designer" parent="base.menu_reporting" sequence="10" action="action_report_designer"/>
+    </data>
+</odoo>
+```
