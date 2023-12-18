@@ -1,0 +1,13 @@
+<t>
+    <t t-name="report_designer.report_designer_template">
+        <div class="o_report_designer">
+            <t t-foreach="reports" t-as="report">
+                <div class="o_report_designer_report">
+                    <h3><t t-esc="report.name"/></h3>
+                    <p><t t-esc="report.description"/></p>
+                    <button type="button" class="o_report_designer_generate_btn" data-id="report.id">Generate Report</button>
+                </div>
+            </t>
+        </div>
+    </t>
+</t>

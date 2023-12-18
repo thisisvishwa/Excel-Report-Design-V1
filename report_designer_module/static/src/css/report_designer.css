@@ -1,0 +1,74 @@
+/* report_designer.css */
+
+/* General styles for the Report Designer module */
+
+.report-designer {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Styles for the report generation wizard */
+
+.report-designer .wizard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.report-designer .wizard .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Styles for the report structuring interface */
+
+.report-designer .structure {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.report-designer .structure .section {
+    margin-bottom: 10px;
+}
+
+.report-designer .structure .section .title {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles for the field selection interface */
+
+.report-designer .fields {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.report-designer .fields .field {
+    margin-bottom: 10px;
+}
+
+.report-designer .fields .field .name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles for the parameter configuration interface */
+
+.report-designer .parameters {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.report-designer .parameters .parameter {
+    margin-bottom: 10px;
+}
+
+.report-designer .parameters .parameter .name {
+    font-weight: bold;
+    color: #333;
+}

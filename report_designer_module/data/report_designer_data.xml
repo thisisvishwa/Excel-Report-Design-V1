@@ -1,0 +1,17 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Initial data for the Report Designer module -->
+
+        <!-- Example of a report template -->
+        <record id="report_template_1" model="report.designer">
+            <field name="name">Default Report Template</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="field_ids" eval="[(6, 0, [ref('base.field_res_partner__name'), ref('base.field_res_partner__email')])]"/>
+            <field name="section_ids" eval="[(0, 0, {'name': 'Section 1', 'field_ids': [(6, 0, [ref('base.field_res_partner__name')])]}), (0, 0, {'name': 'Section 2', 'field_ids': [(6, 0, [ref('base.field_res_partner__email')])]})]"/>
+            <field name="parameter_ids" eval="[(0, 0, {'name': 'Parameter 1', 'field_id': ref('base.field_res_partner__name'), 'type': 'char', 'required': True}), (0, 0, {'name': 'Parameter 2', 'field_id': ref('base.field_res_partner__email'), 'type': 'char', 'required': False})]"/>
+        </record>
+    </data>
+</odoo>
+```
